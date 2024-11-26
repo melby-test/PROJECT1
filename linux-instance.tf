@@ -7,9 +7,10 @@ resource "azurerm_network_interface" "terra-demo" {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.terra-demo.id
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id=azurerm_public_ip.terra-demo.id
+  #  public_ip_address_id=azurerm_public_ip.terra-demo.id
   }
 }
+
 
 resource "azurerm_linux_virtual_machine" "terra-demo" {
   name                = "terra-demo-machine01"
