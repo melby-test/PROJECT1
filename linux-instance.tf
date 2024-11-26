@@ -15,7 +15,7 @@ resource "azurerm_linux_virtual_machine" "terra-demo" {
   name                = "terra-demo-machine01"
   resource_group_name = azurerm_resource_group.terra-demo.name
   location            = azurerm_resource_group.terra-demo.location
-  size                = "Standard_L8as_v3 "
+  size                = "Standard_B1s"
   admin_username      = "adminuser"
   admin_password      ="admin@123"
   disable_password_authentication= "false"
