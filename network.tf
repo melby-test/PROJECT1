@@ -14,13 +14,13 @@ resource "azurerm_subnet" "terra-demo" {
   virtual_network_name = azurerm_virtual_network.terra-demo.name
   address_prefixes     = ["10.0.2.0/24"]
 }
-resource "azurerm_public_ip" "terra-demo" {
-  name                = "terra-demo-machine01-pip"
-  resource_group_name = azurerm_resource_group.terra-demo.name
-  location            = azurerm_resource_group.terra-demo.location
-  allocation_method   = "Static"
+#resource "azurerm_public_ip" "terra-demo" {
+#  name                = "terra-demo-machine01-pip"
+#  resource_group_name = azurerm_resource_group.terra-demo.name
+ # location            = azurerm_resource_group.terra-demo.location
+#  allocation_method   = "Static"
 
-  # tags = {
-  #   environment = "Production"
-  # }
-}
+#  # tags = {
+#  #   environment = "Production"
+#  # }
+#}
