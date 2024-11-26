@@ -19,6 +19,6 @@ provider "azurerm" {
 # Create a resource group
 resource "azurerm_resource_group" "terra-demo" {
   name     = "terra-demo-rg"
-  location = "East Us"
+  location = "Central India"
 }
 
